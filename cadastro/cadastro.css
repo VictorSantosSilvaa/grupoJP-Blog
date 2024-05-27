@@ -141,7 +141,7 @@ video {
   width: 6.5em;
   height: 2.3em;
   margin: 0.5em;
-  background: black;
+  background: white;
   color: white;
   border: none;
   border-radius: 0.625em;
@@ -150,6 +150,8 @@ video {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  border: 1px solid #2d79f3;
+  text-decoration: none;
 }
  .register a{
   text-decoration: none;
@@ -160,7 +162,7 @@ video {
 
 .register:after {
   content: "";
-  background: white;
+  background: black;
   position: absolute;
   z-index: -1;
   left: -20%;
