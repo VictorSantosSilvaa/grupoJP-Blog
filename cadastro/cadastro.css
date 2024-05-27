@@ -151,8 +151,11 @@ video {
   z-index: 1;
   overflow: hidden;
 }
+ .register a{
+  text-decoration: none;
 
-.register:hover {
+ }
+ .register:hover {
   color: black;
 }
 
