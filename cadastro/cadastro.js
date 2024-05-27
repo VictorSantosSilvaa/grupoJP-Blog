@@ -2,7 +2,7 @@ const nameu = document.getElementById("name");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirmPassword");
-const button = document.getElementById("botao");
+const button = document.getElementById("button");
 
 button.addEventListener("click", function (event) {
 
@@ -27,11 +27,10 @@ button.addEventListener("click", function (event) {
         })
         .then((data) => {
             console.log(data)
-            window.location.href = "/login/index.html";
+            window.location.href = "../login/login.html";
         })
         .catch((err) => {
             console.log(err)
         });
-
+console.log("Deu certo")
 });
-alert("Enviado com sucesso.")
