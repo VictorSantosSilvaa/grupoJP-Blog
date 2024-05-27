@@ -23,6 +23,10 @@ video {
   border: 3px solid black;
 }
 
+#BotaoRegister{
+  margin: auto;
+}
+
 ::placeholder {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -123,6 +127,7 @@ video {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
+
 
 .btn:hover {
   border: 1px solid #2d79f3;
