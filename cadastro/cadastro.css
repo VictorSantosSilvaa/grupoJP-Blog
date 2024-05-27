@@ -3,9 +3,9 @@ video {
   top: 0;
   left: 0;
   object-fit: cover;
-  width:100%;
-  height:100%;
-} 
+  width: 100%;
+  height: 100%;
+}
 
 .form {
   display: flex;
@@ -21,6 +21,10 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
   border: 3px solid black;
+}
+
+#BotaoRegister {
+  margin: auto;
 }
 
 ::placeholder {
@@ -126,12 +130,13 @@ video {
 
 .btn:hover {
   border: 1px solid #2d79f3;
-  ;
 }
-#SignUp{
+
+#SignUp {
   text-decoration: none;
   color: #2d79f3;
 }
+
 .register {
   width: 6.5em;
   height: 2.3em;
@@ -140,19 +145,18 @@ video {
   color: white;
   border: none;
   border-radius: 0.625em;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 17px;
   cursor: pointer;
   position: relative;
   z-index: 1;
   overflow: hidden;
- }
- 
- .register:hover {
+}
+
+.register:hover {
   color: black;
- }
- 
- .register:after {
+}
+
+.register:after {
   content: "";
   background: white;
   position: absolute;
@@ -163,10 +167,10 @@ video {
   bottom: 0;
   transform: skewX(-45deg) scale(0, 1);
   transition: all 0.5s;
- }
- 
- .register:hover:after {
+}
+
+.register:hover:after {
   transform: skewX(-45deg) scale(1, 1);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
- }
+}
