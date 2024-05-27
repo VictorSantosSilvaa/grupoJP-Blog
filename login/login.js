@@ -2,7 +2,7 @@ const emailLogin = document.getElementById("email");
 const passwordLogin = document.getElementById("password");
 const button1 = document.getElementById("botao");
 
-button1.addEventListener("click", function (event) {
+button1.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const userData1 = JSON.stringify({
