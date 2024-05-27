@@ -23,7 +23,6 @@ button.addEventListener("click", function (event) {
         headers: { "Content-type": "application/json; charset=UTF-8" }
     })
         .then((result) => {
-            console.log("Enviado com sucesso.")
             return result.json();
         })
         .then((data) => {
@@ -33,4 +32,6 @@ button.addEventListener("click", function (event) {
         .catch((err) => {
             console.log(err)
         });
+
 });
+alert("Enviado com sucesso.")
