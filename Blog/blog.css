@@ -27,7 +27,7 @@ body{
 }
 
 .btn:hover {
-    color: rgb(43, 255, 0);
+    color: rgb(0, 0, 0);
 }
 
 .btn:after {
