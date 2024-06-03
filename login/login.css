@@ -115,6 +115,11 @@ title {
     cursor: pointer;
 }
 
+.button-submit a{
+        text-decoration: none;
+        color: white;
+}
+
 .button-submit:hover {
     background-color: #252727;
 }
