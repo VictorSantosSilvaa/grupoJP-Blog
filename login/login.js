@@ -1,13 +1,13 @@
-const emailLogin = document.getElementById("email");
-const passwordLogin = document.getElementById("password");
-const button1 = document.getElementById("submit");
 
-button1.addEventListener("submit", function (event) {
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const button = document.getElementById("submit");
+button.addEventListener("click", function (event) {
     event.preventDefault();
 
     const userData1 = JSON.stringify({
-        email: emailLogin.value,
-        password: passwordLogin.value,
+        email: email.value,
+        password: password.value,
     });
 
     fetch("http://10.92.198.38:8080/auth/signin", {
@@ -24,7 +24,7 @@ button1.addEventListener("submit", function (event) {
                 // Armazena o token no localStorage
                 localStorage.setItem('token', data.token);
                 console.log('Token armazenado com sucesso:', data.token);
-                window.location.href = "/postagem/index.html";
+                window.location.href = "../publicar/publicar.html";
             } else {
                 console.log('Token não encontrado na resposta da API');
             }
