@@ -1,36 +1,32 @@
-const nameu = document.getElementById("name");
-const email = document.getElementById("email");
-const password = document.getElementById("password");
-const confirmPassword = document.getElementById("confirmPassword");
-const button = document.getElementById("button");
+const form = document.getElementById("form")
+const message = document.getElementById("message")
 
-button.addEventListener("click", function (event) {
+form.addEventListener("submit", (e) =>{
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const password = document.getElementById("password");
+    const confirmPassword = document.getElementById("confirmPassword");
 
-    event.preventDefault();
+    e.preventDefault();
 
-    const userData = JSON.stringify({
-        name: nameu.value,
-        email: email.value,
-        password: password.value,
-        confirmPassword: confirmPassword.value,
+//transformar os dados em json
 
-    });
-    console.log(userData)
 
-    fetch("http://10.92.198.38:8080/auth/signup", {
-        method: "POST",
-        body: userData,
-        headers: { "Content-type": "application/json; charset=UTF-8" }
-    })
-        .then((result) => {
-            return result.json();
-        })
-        .then((data) => {
-            console.log(data)
-            window.location.href = "../login/login.html";
-        })
-        .catch((err) => {
-            console.log(err)
-        });
-console.log("Deu certo")
-});
+const userData = JSON.stringify({
+    name: name.value,
+    email: email.value,
+    password: password.value,
+    confirmPassword: confirmPassword.value,
+})
+
+fetch("http://10.92.198.38:8080/signup", {
+    method: "Post",
+    body: userData,
+    headers: {"Content-type": "application/json; charset=UTF-8"}
+})
+    .then((result) => result.json())
+    .then((data) => message.innerText = data.message)
+    .then((err) => console.log(err));
+
+    console.log(name.value);
+})
