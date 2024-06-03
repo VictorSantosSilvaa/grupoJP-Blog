@@ -19,8 +19,8 @@ body{
 }
 
 .imgLogo{
-display: flex;
-justify-content: left;
+   
+    height: auto;
 }
 
 h1{
