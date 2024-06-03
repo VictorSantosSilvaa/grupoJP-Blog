@@ -1,6 +1,6 @@
 const emailLogin = document.getElementById("email");
 const passwordLogin = document.getElementById("password");
-const button1 = document.getElementById("botao");
+const button1 = document.getElementById("submit");
 
 button1.addEventListener("submit", function (event) {
     event.preventDefault();
