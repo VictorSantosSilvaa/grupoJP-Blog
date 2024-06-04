@@ -1,23 +1,25 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.branco{
+.branco {
     color: white;
 }
 
-.header{
+.header {
     background-color: rgb(120, 77, 13);
     text-align: center;
+    padding: 30px;
 }
 
-h1{
+h1 {
     color: white;
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -28,49 +30,127 @@ h1{
 }
 
 .menu,
-.logo{
+.logo {
     padding-bottom: 15px;
 }
 
-a, a:visited{
+a,
+a:visited {
     color: white;
     text-decoration: none;
     padding: 8px 12px;
 }
 
-a:hover{
+a:hover {
     background-color: white;
     color: rgb(120, 77, 13);
 }
 
-.container{
-    width: 920px;
-    margin: 0 auto;
+.leftcolumn {
+    width: 100%;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
     padding: 20px;
 }
 
-.posts{
-    width: 660px;
-    background-color: bisque;
-    float: left;
-}
-
-.post{
+.card {
+    background-color: rgb(120, 77, 13);
     padding: 20px;
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    left: 10%;
 }
 
-h2{
-    color: blue;
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.data-post{
-    font-size: 0.8em ;
-    margin-bottom: 15px;
-    display: block;
+.header-post {
+    padding: 12px 0;
 }
 
-.barra-lateral{
-    width: 240px;
-    background-color: red;
-    float: right;
+.header-post ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+#text-content {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#name {
+    font-size: 26px;
+}
+
+.img-content {
+    width: 498px;
+    height: 434px;
+    background-color: gray;
+    border-radius: 30px;
+}
+
+#avatar-align {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+#avatar {
+    height: 60px;
+    width: 60px;
+}
+
+#tres-pontos {
+    height: 32px;
+    width: 32px;
+    margin-right: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 0;
+    margin-top: 18px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, #dee1e2 0px 0px 0px 1px;
+}
+
+.footer-btns button {
+    margin: 0 5px;
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    background: black;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
 }
