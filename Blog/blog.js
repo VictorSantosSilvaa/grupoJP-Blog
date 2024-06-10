@@ -1,5 +1,5 @@
-const initialImage = "style/images/curtida-vazia.png";
-const alternateImage = "style/images/curtida-vermelha.png";
+const initialImage = "../Assets/img/curtida-vazia.png";
+const alternateImage = "../Assets/img/curtida-vermelha.png";
 const urlImg = "http://10.92.198.38:8080/";
 const limitPost = 3;
 var currentPage = 1;
@@ -30,10 +30,10 @@ function cards(data) {
         <div class="header-post">
           <ul>
             <div id="avatar-align">
-              <img src="./style/images/user.png" id="avatar" alt="" />
+              <img src="../Assets/img/user.png" id="avatar" alt="" />
               <h1 id="name">${element.title}</h1>
             </div>
-            <img src="style/images/3-points.png" id="tres-pontos" alt="" />
+            <img src="../Assets/img/3-points.png" id="tres-pontos" alt="" />
           </ul>
         </div>
         <section>
