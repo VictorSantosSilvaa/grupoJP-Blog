@@ -24,7 +24,7 @@ button.addEventListener("click", function (event) {
                 // Armazena o token no localStorage
                 localStorage.setItem('token', data.token);
                 console.log('Token armazenado com sucesso:', data.token);
-                window.location.href = "../publicar/publicar.html";
+                window.location.href = "../publicar/publicar.html","../User/user.html";
             } else {
                 console.log('Token não encontrado na resposta da API');
             }
